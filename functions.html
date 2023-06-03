@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <script>
+            let obj={
+                key1:``,
+                key2:function(){
+                    let func_one=function(){
+                        this.key1=`Hello`;
+                    }
+                    func_one();
+                }
+            };
+            obj.key2();
+            document.write(obj.key1);
+        </script>
+    </body>
+</html>
+
+
+
+

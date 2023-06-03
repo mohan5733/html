@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spread & Rest</title>
+    </head>
+    <body>
+        <script>
+            let arr1=[100,200,300,400,500];
+            let [x,y,...z]=arr1;
+            z.forEach((element,index)=>{
+                document.write(element,`<br>`);
+            });
+            let obj1={
+                key1:`Hello_1`,
+                key2:`Hello_2`,
+                key3:`Hello_3`
+            };
+            let {key1,...key2}=obj1;
+            for(let key in key2){
+                document.write(obj1[key]);
+            }
+            let original_copy=[10,20,30];
+            let xerox_copy=[...original_copy];
+            xerox_copy.forEach((element,index)=>{
+                document.write(element,`<br>`);
+            });
+
+            function func_one(...param){
+                console.log(param);
+            }
+            func_one(10,20,30,40,50);
+                // [10, 20, 30, 40, 50]
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CallBacks</title>
+    </head>
+    <body>
+        <script>
+           let add=(num,callback)=>{
+                callback(num+5,false);
+           }
+           let sub=(num,callback)=>{
+                callback(num-3,false);
+           }
+           let multiplication=(num,callback)=>{
+                callback(num*2,false);
+           }
+           let division=(num,callback)=>{
+                callback(num/2-2,false);
+           }
+           add(5,(addRes,error)=>{
+                if(!error){
+                    sub(addRes,(subRes,error)=>{
+                        if(!error){
+                            multiplication(subRes,(mulRes,error)=>{
+                                if(!error){
+                                    division(mulRes,(divRes,error)=>{
+                                        if(!error){
+                                            document.write(divRes);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+           });
+        </script>
+    </body>
+</html>

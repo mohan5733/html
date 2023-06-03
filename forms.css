@@ -1,0 +1,30 @@
+fieldset{
+    border: 2px solid rgb(152, 147, 147);
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    background: linear-gradient(180deg,blue,green);
+    color: white;
+    font-family: Comic Sans MS;
+}
+legend{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+input[type="submit"],input[type="reset"]{
+    width: 100px;
+    height: 50px;
+    border: 2px solid red;
+    background: linear-gradient(45deg,salmon,pink);
+    border-radius: 0px 30px;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    border: 2px solid aqua;
+    background: linear-gradient(45deg,yellow,green);
+}

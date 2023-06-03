@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="validations.css">
+        <script src="validations.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            <form name="regform" onsubmit="return register()">
+                <table>
+                    <!-- FIRST NAME-->
+                    <tr>
+                        <td>First Name</td>
+                        <td>
+                            <input type="text" name="fname" 
+                                   placeholder="Enter First Name">
+                        </td>
+                        <td>
+                            <span id="fname_errors"></span>
+                        </td>
+                    </tr>
+
+                    <!-- LAST NAME-->
+                    <tr>
+                        <td>LAST Name</td>
+                        <td>
+                            <input type="text" name="lname" 
+                                placeholder="Enter LAST Name">
+                        </td>
+                        <td>
+                            <span id="lname_errors"></span>
+                        </td>
+                    </tr>
+
+                    <!-- PASSWORD-->
+                    <tr>
+                        <td>PASSWORD</td>
+                        <td>
+                            <input type="password" name="upwd" 
+                                placeholder="Enter Password">
+                        </td>
+                        <td>
+                            <span id="upwd_errors"></span>
+                        </td>
+                    </tr>
+
+
+                    <!-- Conf PASSWORD-->
+                    <tr>
+                        <td>Conf Password</td>
+                        <td>
+                            <input type="password" name="cupwd" 
+                                placeholder="Enter Conf Password">
+                        </td>
+                        <td>
+                            <span id="cupwd_errors"></span>
+                        </td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Submit & Reset -->
+                    <tr>
+                        <td>
+                            <input type="submit" value="Register">
+                        </td>
+                        <td>
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+
+
+
+                </table>
+            </form>
+        </fieldset>
+    </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promises</title>
+    </head>
+    <body>
+        <script>
+            let promise1=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve(100);
+                },1000);
+            });
+            promise1.then((posRes)=>{
+                console.log("Chain1...",posRes*posRes);
+                return posRes*posRes;
+            },(errRes)=>{
+                console.log(errRes);
+            }).then((res)=>{
+                console.log("Chain2...",res*2);
+            },(err)=>{
+                console.log(err);
+            });
+        </script>
+    </body>
+</html>

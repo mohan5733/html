@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+    </head>
+    <body>
+        <script>
+            let obj={
+                name:`Sathya Technologies`,
+                outer_func:function(){
+                    inner_func=()=>{
+                        document.write(this.name);  
+                                    //Sathya Technologies
+                    }
+                    inner_func();
+                }
+            };
+            obj.outer_func();
+        </script>
+    </body>
+</html>

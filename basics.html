@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basics</title>
+    </head>
+    <body>
+       <script>
+          document.write("welcome to javascript","<br>");
+        
+          document.write(10+10,"<br>");
+                            //20
+          document.write(10+ +"10","<br>");
+                            //20
+
+          document.write(10+ +"10"+ +"20","<br>");
+                            //40
+          document.write(10+10+"10","<br>");
+                            //2010
+
+         document.write(10-"10","<br>");
+                            //0
+         document.write(10*"10","<br>");
+                            //100
+         document.write(10/"10","<br>");
+                            //1
+         document.write(10/"0","<br>");
+                            //Infinity
+         document.write(10/"A","<br>");
+                            //NaN
+                            //Not an Number
+
+        //boolean
+        //true --- 1
+        //false --- 0
+        document.write(true+true,"<br>");
+                        //2
+        document.write(true+false ,"<br>");
+                        //1
+        document.write(1+true,"<br>");
+                        //2
+        document.write(true/false,"<br>");
+                        //Infinity
+        document.write(1+"true","<br>");
+                        //1true
+
+
+                        
+        //&
+        //if both are true, then result is true
+        document.write(1&1);            //1
+        document.write(1&0);            //0
+        document.write(0&1);            //0
+        document.write(0&0);            //0
+
+        //|
+        //if atleat one is true then result is true
+        document.write(1|1);            //1
+        document.write(1|0);            //1
+        document.write(0|1);            //1
+        document.write(0|0);            //0
+
+        //^(XoR)
+        //if both are opposite then result is true
+        document.write(1^1);            //0
+        document.write(1^0);            //1
+        document.write(0^1);            //1
+        document.write(0^0);            //0
+
+
+        document.write(10>9>8,"<br>");    //false
+        document.write(1<2<3,"<br>");     //true
+
+
+        //= called as assignment operator
+        //== called as comparision operator
+        //=== called as strict comparision operator
+        document.write(10=="10");       //true
+        document.write(10==="10");      //false
+        document.write(10=="ten");      //false
+        document.write(10==="ten");     //false
+
+        document.write(0.1+0.2);
+                    //0.30000000000000004
+        document.write(0.1+0.2==0.3);
+                    //false
+        document.write(0.1+0.2===0.3);
+                    //false
+        //javascript is more accurate while adding fractional numbers
+
+        document.write(10+5/10-5);
+                    //5.5
+        //B - Bractet
+        //O - of
+        //D - Division
+        //M - Multiplication
+        //A - Addition
+        //S - Subtraction
+        document.write((10+5)/(10-5));
+                    //3
+
+        //ternary operator
+        //condition ? statement1 : statement2;
+        10>9>8?document.write("hello"):document.write("bye");
+            //bye
+        1<2<3?document.write("hello"):document.write("bye");
+            //hello
+        true?document.write("hello"):document.write("bye");
+            //hello
+        false?document.write("hello"):document.write("bye");
+            //bye
+        
+        console.log("debugging soon");
+
+        console.table([100,200,300,400,500]);
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </script>
+    </body>
+</html>

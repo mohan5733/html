@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Debugging</title>
+    </head>
+    <body>
+        <script>
+            let add=(param1,param2)=>{
+                return param1()+param2();
+            }
+            let res=add(()=>{
+                return 10;
+            },()=>{
+                return 10;
+            });
+            document.write(res);
+        </script>
+    </body>
+</html>

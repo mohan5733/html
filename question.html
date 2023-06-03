@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Priority</title>
+    </head>
+    <body>
+        <script>
+            function func_one(){
+                document.write(x);        //undefined
+                document.write(y);        //Uncaught ReferenceError: y is not defined
+                {
+                    document.write(x);    //undefined
+                    document.write(y);    //Uncaught ReferenceError: Cannot access  'y' before initialization
+                    var x=100;
+                    let y=200;
+                    document.write(x);     //100
+                    document.write(y);     //200
+                }
+                document.write(x);         //100
+                document.write(y);         //Uncaught ReferenceError: y is not defined
+            }
+            func_one();
+        </script>
+    </body>
+</html>
